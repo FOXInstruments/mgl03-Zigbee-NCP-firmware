@@ -2,7 +2,7 @@
 
 Based on Gecko SDK v4.4.6 with EmberZNet v7.5.0.0
 
-[Firmware](https://github.com/Sergey1Fox/mgl03-Zigbee-NCP-firmware/blob/main/ewarm-iar/exe/zigbee_ncp.gbl)
+[Firmware](https://github.com/FOXInstruments/mgl03-Zigbee-NCP-firmware/blob/main/ewarm-iar/exe/zigbee_ncp.gbl)
 
 Due to Flash size limitation project better to compile using IAR ARM toolchain or reduce NVM size to 6Kbyte.
 
@@ -33,4 +33,4 @@ Gateway must have openned SSH.
 9. SSH: /data/openmiio_agent miio mqtt cache central z3 --zigbee.tcp=8888 &
 10. Switch HASS Z2M addon to "ember" protocol
 
-[1]: https://github.com/Sergey1Fox/mgl03-Zigbee-NCP-firmware/blob/main/ewarm-iar/exe/zigbee_ncp.gbl
+[1]: https://github.com/FOXInstruments/mgl03-Zigbee-NCP-firmware/blob/main/ewarm-iar/exe/zigbee_ncp.gbl
