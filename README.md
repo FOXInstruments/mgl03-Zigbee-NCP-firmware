@@ -1,4 +1,4 @@
-# mgl03-Zigbee-NCP-firmware
+# Xiaomi Gateway mgl03-Zigbee-NCP-firmware
 
 Based on Gecko SDK v4.4.6 with EmberZNet v7.5.0.0
 
@@ -8,7 +8,8 @@ Due to Flash size limitation project better to compile using IAR ARM toolchain o
 
 Zigbee chip EFR32MG1B232F256GM32
 
-UART Settings
+## UART Settings
+
 | Parameter            |  Value                |
 |----------------------|-----------------------|
 | Baud rate            |  115200               |
@@ -17,10 +18,10 @@ UART Settings
 | TX_Pin               |  PA0                  |
 | RX_Pin               |  PA1                  |
 
-##
- Flash procedure
+## Flash procedure
 
-Windows. [TeraTerm](https://teratermproject.github.io/). [AlexT/XiaomiGateway3](https://github.com/AlexxIT/XiaomiGateway3). Gateway must have openned SSH.
+Used Software: [TeraTerm](https://teratermproject.github.io/), [AlexT/XiaomiGateway3](https://github.com/AlexxIT/XiaomiGateway3).<br>
+Gateway must have openned SSH.
 1. Connet to mgl03 by SSH
 2. SSH: killall openmiio_agent
 3. SSH: zigbee_inter_bootloader.sh 0; zigbee_reset.sh 0; zigbee_reset.sh 1; /data/openmiio_agent --zigbee.tcp=8889 --zigbee.baud=115200;
